@@ -70,8 +70,36 @@ public class Lesson {
         //Используемые технологии: String.find, String.replaceAll, String.split, String.join, String.contains, String.substring
         //Регулярные выражения, класс StringBuilder
 
+        runFirstHomeWork();
 
     }
 
+    private static void runFirstHomeWork() {
+        String text1 = "<client>(Какие то данные)<data>79991113344;test@yandex.ru;Иванов Иван Иванович</data></client>";
+        String text2 = "<client>(Какие то данные)<data></data></client>";
+        String text3 = "<client>(Какие то данные)<data>Иванов Иван Иванович;79991113344</data></client>";
+        String text4 = "<client>l.dkasjghdlkashdksa<data>Иванов Иван Иванович;79991113344</data></client>";
+
+        System.out.println("_".repeat(100) + "\n");
+        MaskingDate test = new MaskingDate();
+        test.input(text1);
+//        System.out.println(test);
+        System.out.println("_".repeat(100) + "\n");
+
+        MaskingDate test2 = new MaskingDate();
+        test2.input(text2);
+//        System.out.println(test2);
+        System.out.println("_".repeat(100) + "\n");
+
+        MaskingDate test3 = new MaskingDate();
+        test3.input(text3);
+//        System.out.println(test3);
+        System.out.println("_".repeat(100) + "\n");
+
+        MaskingDate test4 = new MaskingDate();
+        test4.input(text4);
+//        System.out.println(test4);
+        System.out.println("_".repeat(100) + "\n");
+    }
 
 }
